@@ -1,0 +1,107 @@
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+body {
+
+}
+p {
+	font-family: hind, Arial, sans-serif;
+	font-size: 1.1em;
+	color: #0e352b;
+}
+h2 {
+	font-family: hind, Arial, sans-serif;
+	font-weight: 500;
+}
+.footer {
+	background-color: #434a54;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+.footer p {
+	color: #ffffff;
+	margin: 0;
+}
+
+/* Typograph*/
+.title { 
+	font-family: Rokkitt, Arial, sans-serif;
+	font-size: 5em;
+	font-weight: 400; 
+	text-shadow: 2px 4px 3px gray;
+}
+.slogan {
+	font-family: hind, Arial, sans-serif;
+	font-size: 1.5em;
+	color: #0e352b;
+}
+/* Genearl Style */
+.call4action {
+	padding-top: 50px;
+	background: rgb(255,255,255) url("../images/background-call3.jpg") 50% 45% fixed no-repeat;
+	width: 100%;
+	min-height: 600px;
+}
+.text-holder {
+	background-color: rgba(255,255,255, 0.8);
+	padding: 40px;
+}
+.iconswiss {
+	width: 125px;
+	margin: 0 auto;
+	position: relative;
+	top: 40px;
+}
+.github-actions {
+	background-color: #ffffff;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	vertical-align: middle;
+	border-top: thin DOTTED #797979;
+}
+.github-actions-nav {
+	list-style: none;
+	margin-bottom: 0;
+}
+.github-actions-nav li {
+	display: inline;
+}
+.github-page {
+	width: 180px;
+	margin: 30px auto;
+}
+.btn-go {
+	background-color: #37bc9b;
+	color: #ffffff;
+	border-radius: 0; 
+}
+
+.features {
+	margin: 25px auto;
+}
+.img-icon {
+	margin: 0 auto;
+}
+.circle {
+	border-radius: 50%;
+	width: 200px;
+	height: 200px; 
+}
+
+/* Helpers to animation */
+.hidden{
+     opacity:0;
+}
+.visible{
+     opacity:1;
+}
+
+
+
+
+
+
+
+
+
+
