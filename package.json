@@ -1,0 +1,27 @@
+{
+    "name": "FrontendBoilerplate",
+    "title": "FrontendBoilerplate",
+    "description": "A starting point to any web project",
+    "version": "0.0.1",
+    "homepage": "http://newaeonweb.com.br/frontendboilerplate/",
+    "author": {
+        "name": "Fernando Monteiro",
+        "url": "http://newaeonweb.com.br"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git@github.com:newaeonweb/responsiveboilerplate.git"
+    },
+    "licenses": [
+        {
+            "type": "MIT",
+            "url": "https://github.com/newaeonweb/responsiveboilerplate/LICENSE.md"
+        }
+    ],
+    "dependencies": {
+
+    },
+    "devDependencies": {
+    },
+    "keywords": ["frontend", "boilerplate"]
+}

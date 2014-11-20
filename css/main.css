@@ -1,6 +1,3 @@
-/* ==========================================================================
-   Author's custom styles
-   ========================================================================== */
 body {
 
 }
@@ -67,7 +64,7 @@ h2 {
 	display: inline;
 }
 .github-page {
-	width: 180px;
+	width: 260px;
 	margin: 30px auto;
 }
 .btn-go {
@@ -96,8 +93,41 @@ h2 {
      opacity:1;
 }
 
+/* Overhide bootstrao colors */
+.navbar-default {
+	background-color: #37bc9b;
+	border: none;
+}
+.navbar-default .navbar-nav>li>a {
+	color: #FFF;
+}
+.navbar-brand,
+.navbar-nav > li > a {
+  text-shadow: none;
+}
 
 
+@media screen and (max-width: 480px) {
+	.title { 
+		font-size: 3.5em;
+	}
+	.call4action {
+		background: rgb(255,255,255) url("../images/background-call-small.jpg") 50% 25% fixed no-repeat;
+		width: 100%;
+		min-height: 680px;
+	}
+}
+@media screen and (max-width: 320px) {
+	.title { 
+		font-size: 2.5em;
+	}
+	.slogan {
+		font-size: 1.3em;
+	}
+	.call4action {
+		min-height: 680px;
+	}
+}
 
 
 
