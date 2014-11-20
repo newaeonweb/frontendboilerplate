@@ -1,0 +1,5 @@
+node_modules
+.tmp
+.idea/*
+.sass-cache
+src/bower_components

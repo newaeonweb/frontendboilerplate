@@ -1,0 +1,35 @@
+{
+  "name": "frontendboilerplate",
+  "version": "0.0.1",
+  "description": "Frontend Boilerplate to star a web project from the scratch",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/newaeonweb/frontendboilerplate.git"
+  },
+  "keywords": [
+    "Frontend",
+    "boilerplate",
+    "boilerplate",
+    "frontend",
+    "grunt",
+    "boilerplate"
+  ],
+  "author": "Fernando Monteiro",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/newaeonweb/frontendboilerplate/issues"
+  },
+  "homepage": "https://github.com/newaeonweb/frontendboilerplate",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "load-grunt-tasks": "^1.0.0",
+    "time-grunt": "^1.0.0"
+  }
+}
