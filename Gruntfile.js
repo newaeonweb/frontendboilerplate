@@ -35,7 +35,7 @@ module.exports = function (grunt) {
     // Make sure code styles are up to par and there are no obvious mistakes
     jshint: {
       all: {
-        src: watchFiles.clientJS.concat(watchFiles.serverJS),
+        src: watchFiles.clientJS,
         options: {
           jshintrc: '.jshintrc',
           reporter: require('jshint-stylish')
