@@ -6,9 +6,6 @@
   "directories": {
     "test": "test"
   },
-  "scripts": {
-    "test": "test"
-  },
   "repository": {
     "type": "git",
     "url": "https://github.com/newaeonweb/frontendboilerplate.git"
