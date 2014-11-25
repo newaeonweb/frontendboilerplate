@@ -2,6 +2,7 @@ Front-end Boilerplate.
 =====================
 Because DRY is suck.
 
+[![Build Status](https://travis-ci.org/newaeonweb/frontendboilerplate.svg?branch=master)](https://travis-ci.org/newaeonweb/frontendboilerplate) 
 # Preface
 
 As a developer, everytime you need to start a new web project you must follow the same steps.
