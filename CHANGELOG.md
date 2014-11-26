@@ -1,3 +1,16 @@
+# 0.0.4 (2014-11-26)
+
+### Bug fixes
+
+* Adjusted package.json
+
+### Features
+
+- Grunt.js Plugins
+	- grunt-contrib-concat
+	- grunt-contrib-uglify
+	- karma-jasmine
+	
 # 0.0.3 (2014-11-26)
 
 ### Bug fixes

@@ -109,10 +109,10 @@ module.exports = function (grunt) {
 	// Load grunt tasks automatically
 	require('load-grunt-tasks')(grunt);
 
-	// Making grunt default to force in order not to break the project.
+	// Making grunt default to force in order not to break the project if something fail.
 	grunt.option('force', true);
 
-	// Default task(s).
+	// Development task(s).
 	grunt.registerTask('dev', ['concurrent']);
 
 	// Lint task(s).
