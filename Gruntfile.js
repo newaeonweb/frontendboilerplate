@@ -103,8 +103,28 @@ module.exports = function (grunt) {
 			unit: {
 				configFile: 'test/karma.conf.js'
 			}
+		},
+		mocha: {
+  			test: {
+    			src: ['test/**/*.html'],
+				options: {
+					timeout: 10000,
+					 page: { 
+						settings: { 
+						  webSecurityEnabled: false,  // disable cors checks in phantomjs
+						},  
+      				},
+					reporter: 'Spec',
+					// Indicates whether 'mocha.run()' should be executed in
+          			// 'bridge.js'
+          			run: true,
+				},
+  			},
 		}
 	});
+	
+	// Time grunt to measure the tasks time
+	require('time-grunt')(grunt);
 
 	// Load grunt tasks automatically
 	require('load-grunt-tasks')(grunt);
