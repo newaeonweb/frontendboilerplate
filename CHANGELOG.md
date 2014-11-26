@@ -1,3 +1,27 @@
+# 0.0.3 (2014-11-26)
+
+### Bug fixes
+
+* Adjusted path to karma.conf.js file
+
+### Features
+
+- Grunt.js Plugins
+	- karma-chrome-launcher
+	- karma-firefox-launcher
+	
+# 0.0.2 (2014-11-26)
+
+### Changes
+
+* Comments improvement
+
+### Features
+
+- Grunt.js Plugins
+	- grunt-contrib-connect
+	- grunt-contrib-csslint
+
 # 0.0.1 (2014-11-19)
 
 ### Features
@@ -11,15 +35,3 @@
 	- load-grunt-tasks
 	- jshint-stylish
 	- time-grunt
-
-# 0.0.2 (2014-11-26)
-
-### Changes
-
-* Comments improvement
-
-### Features
-
-- Grunt.js Plugins
-	- grunt-contrib-connect
-	- grunt-contrib-csslint

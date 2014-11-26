@@ -1,5 +1,5 @@
 // Karma configuration
-// Generated on Thu Nov 20 2014 16:21:26 GMT-0200 (Horário brasileiro de verão)
+// Generated on Thu Nov 20 2014
 
 module.exports = function(config) {
   config.set({
@@ -53,9 +53,16 @@ module.exports = function(config) {
     autoWatch: true,
 
 
-    // start these browsers
     // available browser launchers: https://npmjs.org/browse/keyword/karma-launcher
-    browsers: ['PhantomJS'],
+    // Start these browsers, currently available:
+		// - Chrome
+		// - ChromeCanary
+		// - Firefox
+		// - Opera
+		// - Safari (only Mac)
+		// - PhantomJS
+		// - IE (only Windows)
+	browsers: ['PhantomJS'],
 
 
     // Continuous Integration mode
