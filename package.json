@@ -8,8 +8,7 @@
   },
   "scripts": {
     "start": "grunt",
-    "test": "grunt test",
-    "postinstall": "bower install --config.interactive=false"
+    "test": "grunt test"
   },
   "repository": {
     "type": "git",

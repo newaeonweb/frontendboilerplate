@@ -115,12 +115,12 @@ module.exports = function (grunt) {
 	// Default task(s).
 	grunt.registerTask('dev', ['concurrent']);
 
-	// Build task(s).
-	grunt.registerTask('build', ['lint']);
-
 	// Lint task(s).
 	grunt.registerTask('lint', ['jshint', 'csslint']);
 	
 	// Unit Testing with Karma
 	grunt.registerTask('test', ['karma']);
+	
+	// Build task(s).
+	grunt.registerTask('build', ['lint', 'concat', 'uglify']);
 };
