@@ -43,7 +43,7 @@ We propose a folder structure for web projects from the scratch, because all web
 				mocha.js
 		spec				--> specs for testing
 			first-test.js	--> example on how to write tests
-		testing.html		--> visul page for tests
+		test.html			--> visul page for tests
 	Gruntfile.js			--> where the magic happens
 ```
 ## Getting Started

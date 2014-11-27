@@ -1,7 +1,11 @@
-'use strict';
-
+/**
+*	Sample 
+*/
 function sayHello() {
-	console.log("Say Hello...!");
+	
+	'use strict';
+	
+	window.console.log("Say Hello...!");
 }
 
 sayHello();

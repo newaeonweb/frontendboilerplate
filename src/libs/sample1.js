@@ -1,10 +1,11 @@
 /**
  * Sample content to test the concat and minify grunt plugins.
  */
-'use strict';
-	
 function sampleA() {
-	console.log("Sample A");
+	
+	'use strict';
+	
+	window.console.log("Sample A");
 }
 	
 sampleA();
