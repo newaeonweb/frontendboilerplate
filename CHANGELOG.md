@@ -1,4 +1,4 @@
-# 0.0.5 (2014-11-26)
+# 0.0.5 (2014-11-27)
 
 ### Bug fixes
 
@@ -7,9 +7,8 @@
 ### Features
 
 - Grunt.js Plugins
-	- grunt-contrib-concat
-	- grunt-contrib-uglify
-	- karma-jasmine
+	- grunt-mocha
+
 	
 # 0.0.4 (2014-11-26)
 
