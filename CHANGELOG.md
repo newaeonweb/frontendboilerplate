@@ -9,6 +9,7 @@
 - Grunt.js Plugins
 	- grunt-mocha
 
+Removed Karma and grunt karma
 	
 # 0.0.4 (2014-11-26)
 
