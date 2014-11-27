@@ -46,3 +46,33 @@ We propose a folder structure for web projects from the scratch, because all web
 		testing.html		--> visul page for tests
 	Gruntfile.js			--> where the magic happens
 ```
+## Getting Started
+
+To get you started you can simply clone or download the repository and install the dependencies, very simple!
+
+### Prerequisites
+
+You need git to clone the repository.
+[http://git-scm.com/](http://git-scm.com/).
+
+Also you must have node.js and its package manager (npm) installed. 
+You can get them from [http://nodejs.org/](http://nodejs.org/).
+
+### Clone frontendboilerplate
+
+Clone the repository using [git][git]:
+
+```
+git clone https://github.com/newaeonweb/frontendboilerplate.git
+cd frontendboilerplate
+```
+
+If you just want to start from zero commit history, you need to do:
+
+```bash
+git clone --depth=1 https://github.com/newaeonweb/frontendboilerplate.git <your-project-name>
+```
+
+The `depth=1` tells git to only pull down one commit worth of historical data.
+
+### Install Dependencies
