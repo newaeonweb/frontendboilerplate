@@ -1,6 +1,7 @@
-'use strict';
-
+// Grunt tasks
 module.exports = function (grunt) {
+	
+	'use strict';
 
 	// Unified Watch Object asign variables for easy editing
 	var watchFiles = {
@@ -14,8 +15,7 @@ module.exports = function (grunt) {
 	// Define the configuration for all the tasks
 	grunt.initConfig({
 		pkg: grunt.file.readJSON('package.json'),
-		banner: 
-			'/*!\n' +
+		banner: '/*!\n' +
 			'* <%= pkg.name %> - v<%= pkg.version %> - MIT LICENSE <%= grunt.template.today("dd") %> <%= grunt.template.today("mm") %> <%= grunt.template.today("yyyy") %>. \n' +
 			'*/\n',
 		// Project settings
@@ -49,7 +49,8 @@ module.exports = function (grunt) {
 				src: watchFiles.clientJS.concat(watchFiles.clientSrc),
 				options: {
 					jshintrc: '.jshintrc',
-					reporter: require('jshint-stylish')
+					reporter: require('jshint-stylish'),
+					ignores: ['assets/js/*.min.js']
 				}
 			}
 		},
@@ -106,21 +107,21 @@ module.exports = function (grunt) {
 			}
 		},
 		mocha: {
-  			test: {
-    			src: ['test/**/*.html'],
+			test: {
+				src: ['test/**/*.html'],
 				options: {
 					timeout: 10000,
-					 page: { 
-						settings: { 
-						  webSecurityEnabled: false,  // disable cors checks in phantomjs
-						},  
-      				},
+					page: {
+						settings: {
+							webSecurityEnabled: false  // disable cors checks in phantomjs
+						}
+					},
 					reporter: 'Spec',
 					// Indicates whether 'mocha.run()' should be executed in
-          			// 'bridge.js'
-          			run: true,
-				},
-  			},
+					// 'bridge.js'
+					run: true
+				}
+			}
 		}
 	});
 	
@@ -143,5 +144,5 @@ module.exports = function (grunt) {
 	grunt.registerTask('test', ['karma']);
 	
 	// Build task(s).
-	grunt.registerTask('build', ['lint', 'concat', 'uglify']);
+	grunt.registerTask('build', ['lint', 'concat', 'uglify', 'test']);
 };
