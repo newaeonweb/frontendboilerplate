@@ -1,3 +1,9 @@
+# 0.0.6 (2014-12-01)
+
+Removed first-test.js from test folder.
+
+Moved Mocha js and css files to respective folders. 
+
 # 0.0.5 (2014-11-27)
 
 ### Bug fixes
