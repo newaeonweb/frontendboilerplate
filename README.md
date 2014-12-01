@@ -42,13 +42,14 @@ We propose a folder structure for web projects from the scratch, because all web
 				chai.js
 				mocha.js
 		spec				--> specs for testing
-			app-test.js	--> example on how to write tests
+			app-test.js		--> example on how to write tests
 		test.html			--> visul page for tests
 	Gruntfile.js			--> where the magic happens
 ```
 ## Getting Started
 
 To get you started you can simply clone or download the repository and install the dependencies, very simple!
+[Quick start](https://github.com/newaeonweb/frontendboilerplate#grunt-commands-available).
 
 ### Prerequisites
 
@@ -97,8 +98,8 @@ Grunt dev
 
 This command will run two tasks:
 
-	* connect
-	* watch
+- connect
+- watch
 
 Using the *concurrent* and *livereload* plugins.
 
@@ -111,8 +112,8 @@ Grunt lint
 
 This command will run two tasks:
 
-	* jshint
-	* csshint
+- jshint
+- csshint
 
 
 _Test_:
@@ -124,7 +125,7 @@ Grunt test
 
 This command will run one task:
 
-	* mocha
+- mocha
 
 _Build_:
 
@@ -135,10 +136,10 @@ Grunt build
 
 This command will run four tasks:
 
-	* lint
-	* concat
-	* uglify
-	* test
+- lint
+- concat
+- uglify
+- test
 	
 
 
