@@ -76,3 +76,70 @@ git clone --depth=1 https://github.com/newaeonweb/frontendboilerplate.git <your-
 The `depth=1` tells git to only pull down one commit worth of historical data.
 
 ### Install Dependencies
+
+
+```
+npm install
+
+```
+
+> The npm command will install all the dependencies listed on package.json file.
+
+
+### Grunt commands available
+
+_Development_:
+
+```
+Grunt dev
+
+```
+
+This command will run two tasks:
+
+	* connect
+	* watch
+
+Using the *concurrent* and *livereload* plugins.
+
+_Linters_:
+
+```
+Grunt lint
+
+```
+
+This command will run two tasks:
+
+	* jshint
+	* csshint
+
+
+_Test_:
+
+```
+Grunt test
+
+```
+
+This command will run one task:
+
+	* mocha
+
+_Build_:
+
+```
+Grunt build
+
+```
+
+This command will run four tasks:
+
+	* lint
+	* concat
+	* uglify
+	* test
+	
+
+
+
