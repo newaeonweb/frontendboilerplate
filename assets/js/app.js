@@ -10,6 +10,9 @@ function sayHello() {
 
 sayHello();
 
+/**
+*	Sample content to illustrate the use of Mocha for tests. 
+*/
 
 var Apple = function (opts) {
 	

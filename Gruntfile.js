@@ -101,11 +101,6 @@ module.exports = function (grunt) {
 				logConcurrentOutput: true
 			}
 		},
-		karma: {
-			unit: {
-				configFile: 'test/karma.conf.js'
-			}
-		},
 		mocha: {
 			test: {
 				src: ['test/**/*.html'],
@@ -117,8 +112,7 @@ module.exports = function (grunt) {
 						}
 					},
 					reporter: 'Spec',
-					// Indicates whether 'mocha.run()' should be executed in
-					// 'bridge.js'
+					// Indicates whether 'mocha.run()' should be executed in'bridge.js'
 					run: true
 				}
 			}
@@ -141,7 +135,7 @@ module.exports = function (grunt) {
 	grunt.registerTask('lint', ['jshint', 'csslint']);
 	
 	// Unit Testing with Karma
-	grunt.registerTask('test', ['karma']);
+	grunt.registerTask('test', ['mocha']);
 	
 	// Build task(s).
 	grunt.registerTask('build', ['lint', 'concat', 'uglify', 'test']);
