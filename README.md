@@ -60,7 +60,7 @@ You can get them from [http://nodejs.org/](http://nodejs.org/).
 
 ### Clone frontendboilerplate
 
-Clone the repository using [git][git]:
+Clone the repository using git:
 
 ```
 git clone https://github.com/newaeonweb/frontendboilerplate.git

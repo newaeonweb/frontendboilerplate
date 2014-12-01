@@ -1,11 +1,16 @@
 /**
- * Sample content to test the concat and minify grunt plugins.
- */
-function sampleB() {
+*	Sample content to illustrate the use of Mocha for tests. 
+*/
+
+var Apple = function (opts) {
 	
 	'use strict';
 	
-	window.console.log("Sample B");
-}
-	
-sampleB();
+    opts = opts || {};
+
+    this.name = opts.name || 'Fuji';
+
+    this.sound = opts.sound || 'crunch';
+
+    return this;
+};

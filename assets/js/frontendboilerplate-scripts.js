@@ -1,5 +1,5 @@
 /*!
-* frontendboilerplate - v0.0.5 - MIT LICENSE 27 11 2014. 
+* frontendboilerplate - v0.0.5 - MIT LICENSE 01 12 2014. 
 */
 /**
  * Sample content to test the concat and minify grunt plugins.
@@ -24,3 +24,19 @@ function sampleB() {
 }
 	
 sampleB();
+/**
+*	Sample content to illustrate the use of Mocha for tests. 
+*/
+
+var Apple = function (opts) {
+	
+	'use strict';
+	
+    opts = opts || {};
+
+    this.name = opts.name || 'Fuji';
+
+    this.sound = opts.sound || 'crunch';
+
+    return this;
+};
