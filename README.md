@@ -24,14 +24,14 @@ We propose a folder structure for web projects from the scratch, because all web
 
 ```
 	assets/					--> all of the files to be used in production
+		bower_components	--> 3rd party js libraries
 		css					--> css files
 		fonts				--> Font-face folder
 		images				--> image files
 		index.html			--> base layout file
 		js					--> javascript files
 	src/					--> scripts for development
-		bower_components	--> 3rd party js libraries
-		libs				--> hand made JavaScript files, plugins and others
+		libs/				--> hand made JavaScript files, plugins and others
 		preprocessor/		--> your choice for Sass, Less or Stylus
 		vendor/				--> third party libraries like: jQuery, Modernizer
 	test					--> test source files and libraries
@@ -92,7 +92,7 @@ npm install
 _Development_:
 
 ```
-Grunt dev
+grunt dev
 
 ```
 
@@ -106,7 +106,7 @@ Using the *concurrent* and *livereload* plugins.
 _Linters_:
 
 ```
-Grunt lint
+grunt lint
 
 ```
 
@@ -119,7 +119,7 @@ This command will run two tasks:
 _Test_:
 
 ```
-Grunt test
+grunt test
 
 ```
 
@@ -130,7 +130,7 @@ This command will run one task:
 _Build_:
 
 ```
-Grunt build
+grunt build
 
 ```
 
@@ -141,6 +141,30 @@ This command will run four tasks:
 - uglify
 - test
 	
+#### Helpers Tasks
+
+_Bower_:
+
+```
+grunt bower
+
+```
+
+Grunt will install all bower dependencies from the `bower.json` file.
+
+
+_Injector_:
+
+```
+grunt injector
+
+```
+
+Grunt will inject all bower dependencies from the `bower.json` file into `index.html`.
+
+> After include some bower denpendecy on `bower.json` file, optionally run `grunt bower` and `grunt injector`.
+
+
 
 
 

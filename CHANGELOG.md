@@ -1,3 +1,15 @@
+# 0.0.7 (2014-12-01)
+
+* Bower components moved to assets folder.
+* Added injectors script on index file.
+
+### Features
+
+- Grunt.js Plugins
+	- grunt-bower-task
+	- grunt-injector
+
+
 # 0.0.6 (2014-12-01)
 
 Removed first-test.js from test folder.

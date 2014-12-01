@@ -101,6 +101,38 @@ module.exports = function (grunt) {
 				logConcurrentOutput: true
 			}
 		},
+		bower: {
+			install: {
+				options: {
+					targetDir: 'src/bower_components',
+					layout: 'byComponent',
+					install: true,
+					verbose: false,
+					cleanTargetDir: false,
+					cleanBowerDir: false,
+					
+					//copy:true,
+					bowerOptions: {
+						main: true
+					}
+				}
+			}
+		},
+		injector: {
+			options: {
+				min: true
+			},
+//			local_dependencies: {
+//      			files: {
+//        			'assets/index.html': ['assets/js/*.js', 'assets/css/*.css'],
+//      			}
+//    		},
+			bower_dependencies: {
+				files: {
+        			'assets/index.html': ['bower.json'],
+      			}
+    		}
+		},
 		mocha: {
 			test: {
 				src: ['test/**/*.html'],
