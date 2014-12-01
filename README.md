@@ -49,7 +49,7 @@ We propose a folder structure for web projects from the scratch, because all web
 ## Getting Started
 
 To get you started you can simply clone or download the repository and install the dependencies, very simple!
-[Quick start](https://github.com/newaeonweb/frontendboilerplate#grunt-commands-available).
+[Quick start](#grunt-commands-available).
 
 ### Prerequisites
 
