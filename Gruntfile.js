@@ -8,6 +8,7 @@ module.exports = function (grunt) {
 		clientJS:   ['assets/js/*.js', 'assets/js/vendor/*.js'],
 		clientSrc:  ['src/libs/*.js'],
 		clientCSS:  ['assets/css/**/*.css'],
+		clientPreprocessor: ['src/preprocessor/*.less', 'src/preprocessor/*.scss'],
 		clientHTML: ['assets/*.html'],
 		mochaTests: ['assets/test/unit/*.js'],
 		concatBase: ['src/libs/*js', 'src/vendor/*js' ]
@@ -31,6 +32,13 @@ module.exports = function (grunt) {
 			clientCSS: {
 				files: watchFiles.clientCSS,
 				tasks: ['csslint'],
+				options: {
+					livereload: true
+				}
+			},
+			clientPreprocessor: {
+				files: watchFiles.clientPreprocessor,
+				tasks: ['less', 'sass'],
 				options: {
 					livereload: true
 				}
