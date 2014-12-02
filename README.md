@@ -36,7 +36,7 @@ We propose a folder structure for web projects from the scratch, because all web
 		bower_components	--> 3rd party js libraries
 		scripts/			--> hand made JavaScript files, plugins and others
 		preprocessor/		--> your choice for Sass or Less
-		vendor/				--> third party libraries like: respond, modernizer
+		vendor/				--> third party libraries like: respond, mçodernizer
 	test					--> test source files and libraries
 		mocha				--> mocha folder structure for visual test results
 			css/			
