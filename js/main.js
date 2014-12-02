@@ -6,6 +6,12 @@
 		repeat: false
     });
 	
+	$('.col-md-6').viewportChecker({
+        classToAdd: 'visible animated zoomIn',
+		offset: 200,
+		repeat: false
+    });
+	
 	
 	// get download link and version from github repo
     $.get("package.json", {nocache: Math.random()}, function(data){
