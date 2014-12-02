@@ -27,16 +27,16 @@ We propose a folder structure for web projects from the scratch, because all web
 
 ```
 	assets/					--> all of the files to be used in production
-		bower_components	--> 3rd party js libraries
 		css					--> css files
 		fonts				--> Font-face folder
 		images				--> image files
 		index.html			--> base layout file
 		js					--> javascript files
 	src/					--> scripts for development
-		libs/				--> hand made JavaScript files, plugins and others
-		preprocessor/		--> your choice for Sass, Less or Stylus
-		vendor/				--> third party libraries like: jQuery, Modernizer
+		bower_components	--> 3rd party js libraries
+		scripts/			--> hand made JavaScript files, plugins and others
+		preprocessor/		--> your choice for Sass or Less
+		vendor/				--> third party libraries like: respond, modernizer
 	test					--> test source files and libraries
 		mocha				--> mocha folder structure for visual test results
 			css/			

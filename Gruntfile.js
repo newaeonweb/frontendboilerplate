@@ -2,16 +2,20 @@
 module.exports = function (grunt) {
 	
 	'use strict';
+	
+	var config = {
+		
+	}
 
 	// Unified Watch Object asign variables for easy editing
 	var watchFiles = {
 		clientJS:   ['assets/js/*.js', 'assets/js/vendor/*.js'],
-		clientSrc:  ['src/libs/*.js'],
+		clientSrc:  ['src/scripts/*.js'],
 		clientCSS:  ['assets/css/**/*.css'],
 		clientPreprocessor: ['src/preprocessor/*.less', 'src/preprocessor/*.scss'],
 		clientHTML: ['assets/*.html'],
 		mochaTests: ['assets/test/unit/*.js'],
-		concatBase: ['src/libs/*js', 'src/vendor/*js' ]
+		concatBase: ['src/scripts/*js', 'src/vendor/*js' ]
 	};
 	// Define the configuration for all the tasks
 	grunt.initConfig({
