@@ -1,4 +1,4 @@
 frontendboilerplate
 ===================
 
-Official Repository
+Official gh-pages Repository

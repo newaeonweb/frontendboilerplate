@@ -85,6 +85,20 @@ h2 {
 	height: 200px; 
 }
 
+.details {
+	margin: 25px auto 0;
+	padding-bottom: 25px;
+	background-color: rgba(240, 240, 240, 1);
+	border-top:thin solid rgba(220, 220, 220, 1)
+}
+code {
+	background-color: #ffffff;
+}
+
+.details ul {
+	list-style: none;
+}
+
 /* Helpers to animation */
 .hidden{
      opacity:0;
