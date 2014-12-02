@@ -118,6 +118,15 @@ This command will run two tasks:
 - jshint
 - csshint
 
+_CSS_:
+
+```
+grunt css:recess
+grunt css:sass
+
+```
+> Using `css:recess` taks will compile *less* files, using `css:sass` tasl will compile *sass* files.
+
 
 _Test_:
 

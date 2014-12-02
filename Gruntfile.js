@@ -82,6 +82,26 @@ module.exports = function (grunt) {
 				dest: 'assets/js/<%= pkg.name %>-scripts.min.js'
 			}
 		},
+		recess: {
+			options: {
+				compile: true,
+				banner: '<%= banner %>'
+			},
+			style: {
+				options: {
+					compress: false
+				},
+				src: ['src/preprocessor/*.less'],
+				dest: 'assets/css/<%= pkg.name %>-style.css'
+			}
+		},
+		sass: {
+			dist: {
+				files: [{
+					'assets/css/<%= pkg.name %>-style.css': 'src/preprocessor/*.scss'
+				}]
+			}
+		},		
 		connect: {
 			server: {
 				options: {
@@ -161,6 +181,10 @@ module.exports = function (grunt) {
 
 	// Development task(s).
 	grunt.registerTask('dev', ['concurrent']);
+	
+	// Css task(s).
+	grunt.registerTask('less', ['recess']);
+	grunt.registerTask('sass', ['sass']);
 
 	// Lint task(s).
 	grunt.registerTask('lint', ['jshint', 'csslint']);

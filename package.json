@@ -34,6 +34,8 @@
     "grunt-contrib-watch": "^0.6.1",
     "grunt-injector": "^0.6.0",
     "grunt-mocha": "^0.4.11",
+    "grunt-recess": "^1.0.0",
+    "grunt-sass": "^0.16.1",
     "jshint-stylish": "^1.0.0",
     "load-grunt-tasks": "^1.0.0",
     "time-grunt": "^1.0.0"
