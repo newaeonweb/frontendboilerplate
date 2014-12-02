@@ -121,11 +121,11 @@ This command will run two tasks:
 _CSS_:
 
 ```
-grunt css:recess
-grunt css:sass
+grunt less
+grunt sass
 
 ```
-> Using `css:recess` taks will compile *less* files, using `css:sass` tasl will compile *sass* files.
+> Using `less` task will compile *less* files, using `sass` task will compile *sass* files.
 
 
 _Test_:
