@@ -110,10 +110,9 @@ module.exports = function (grunt) {
 					verbose: false,
 					cleanTargetDir: false,
 					cleanBowerDir: false,
-					
-					//copy:true,
 					bowerOptions: {
-						main: true
+						forceLatest: true,
+    					production: true
 					}
 				}
 			}
