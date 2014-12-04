@@ -1,6 +1,8 @@
 Front-end Boilerplate. 
 =====================
 Because repeating yourself is suck. [![Build Status](https://travis-ci.org/newaeonweb/frontendboilerplate.svg?branch=master)](https://travis-ci.org/newaeonweb/frontendboilerplate) 
+[![devDependency Status](https://david-dm.org/newaeonweb/frontendboilerplate/dev-status.svg)](https://david-dm.org/newaeonweb/frontendboilerplate#info=devDependencies)
+[![Dependency Status](https://david-dm.org/newaeonweb/frontendboilerplate.svg)](https://david-dm.org/newaeonweb/frontendboilerplate)
 
 ![Alt text](https://github.com/newaeonweb/frontendboilerplate/blob/gh-pages/images/Frontend-Boilerplate-2014-12-01-12-06-17.jpg "Frontend Boilerplate")
 
