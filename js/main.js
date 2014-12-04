@@ -7,7 +7,7 @@
     });
 	
 	$('.col-md-6').viewportChecker({
-        classToAdd: 'visible animated zoomIn',
+        classToAdd: 'visible animated shake',
 		offset: 200,
 		repeat: false
     });
