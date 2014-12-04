@@ -1,3 +1,13 @@
+# 0.1.0 (2014-12-01)
+
+* Added injectors script on index file for Bower dependencies.
+
+### Features
+
+- Grunt.js Plugins
+	- grunt-recess
+	- grunt-sass
+	
 # 0.0.7 (2014-12-01)
 
 * Bower components moved to assets folder.
