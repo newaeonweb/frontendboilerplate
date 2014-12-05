@@ -17,7 +17,7 @@
     $.get("package.json", {nocache: Math.random()}, function(data){
 
         $(function(){
-            $("[data-krack-download]").attr("href", "https://github.com/newaeonweb/frontendboilerplate/releases/download/v"+data.version+"/frontendboilerplate-"+data.version+".zip")
+            $("[data-krack-download]").attr("href", "https://github.com/newaeonweb/frontendboilerplate/archive/v"+data.version+".zip")
             $("[data-krack-version]").text("Version "+data.version);
         });
 
