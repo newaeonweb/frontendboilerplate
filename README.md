@@ -83,10 +83,10 @@ We propose a folder structure for web projects from the scratch, because all web
 		css					--> css files
 		fonts				--> Font-face folder
 		images				--> image files
-		index.html			--> base layout file
-		js					--> javascript files
+		js/					--> javascript files
+			vendor 			--> third party libraries copied from src/vendor
+	lib/					--> 3rd party bower libraries
 	src/					--> scripts for development
-		bower_components	--> 3rd party js libraries
 		scripts/			--> hand made JavaScript files, plugins and others
 		preprocessor/		--> your choice for Sass or Less
 		vendor/				--> third party libraries like: respond, mçodernizer
@@ -99,7 +99,8 @@ We propose a folder structure for web projects from the scratch, because all web
 				mocha.js
 		spec				--> specs for testing
 			app-test.js		--> example on how to write tests
-		test.html			--> visul page for tests
+		test.html			--> visual page for tests
+	index.html				--> base layout file
 	Gruntfile.js			--> where the magic happens
 ```
 
