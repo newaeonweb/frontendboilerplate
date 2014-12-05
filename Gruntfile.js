@@ -2,10 +2,6 @@
 module.exports = function (grunt) {
 	
 	'use strict';
-	
-	var config = {
-		
-	}
 
 	// Unified Watch Object asign variables for easy editing
 	var watchFiles = {
@@ -119,7 +115,7 @@ module.exports = function (grunt) {
 				options: {
 					keepalive: true,
 					port: 8000,
-					base: 'assets',
+					base: '.',
 					hostname: 'localhost',
 					debug: true,
 					livereload: true,
@@ -136,33 +132,33 @@ module.exports = function (grunt) {
 		bower: {
 			install: {
 				options: {
-					targetDir: 'src/bower_components',
 					layout: 'byComponent',
 					install: true,
 					verbose: false,
-					cleanTargetDir: false,
+					cleanTargetDir: true,
 					cleanBowerDir: false,
 					bowerOptions: {
 						forceLatest: true,
-    					production: true
+    					//production: true
 					}
 				}
 			}
 		},
 		injector: {
 			options: {
-				min: true,
+				min: false,
 				addRootSlash: false,
 				relative: true
 			},
+// Uncomment to use with others files.
 //			local_dependencies: {
 //      			files: {
-//        			'assets/index.html': ['assets/js/*.js', 'assets/css/*.css'],
+//        			'index.html': ['js/*.js', 'css/*.css'],
 //      			}
 //    		},
 			bower_dependencies: {
 				files: {
-        			'assets/index.html': ['bower.json'],
+        			'index.html': ['bower.json'],
       			}
     		}
 		},
@@ -173,7 +169,8 @@ module.exports = function (grunt) {
 					timeout: 10000,
 					page: {
 						settings: {
-							webSecurityEnabled: false  // disable cors checks in phantomjs
+							// disable cors checks in phantomjs
+							webSecurityEnabled: false  
 						}
 					},
 					reporter: 'Spec',

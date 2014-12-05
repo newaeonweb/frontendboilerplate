@@ -1,6 +1,10 @@
 # 0.1.0 (2014-12-01)
 
 * Added injectors script on index file for Bower dependencies.
+* Moved index.html from assets folder to root folder
+* Removed bower_components folder.
+* Removed .bowerrc from root folder, using Grunt bower to install dependencies.
+* Finished the first publishing.
 
 ### Features
 

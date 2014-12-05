@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html class="no-js">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title>Frontend Boilerplate</title>
+		<meta name="description" content="Frontend Boilerplate a starting point to web projects">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- injector:css -->
+		<link rel="stylesheet" href="lib/bootstrap/bootstrap.css">
+		<!-- endinjector -->   
+	</head>
+	<body>
+	<!--[if lt IE 7]>
+		<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+	<![endif]-->
+	
+	<!-- Webpage content goes here-->
+	<h1 style="font-size: 3.5em; color: #ccdddd; text-align: center">Hi! Frontend Boilerplate :)</h1>
+
+	<!--/ Webpage content goes here-->
+		
+	<!-- Testing minified scripts -->
+	<script src="assets/js/frontendboilerplate-scripts.min.js"></script>
+	<!--/ Testing minified scripts -->    
+		
+	<!-- Script files goes here-->
+	<!-- Be careful with injector task below-->
+	<!-- injector:js -->
+	<script src="lib/jquery/jquery.js"></script>
+	<script src="lib/bootstrap/bootstrap.js"></script>
+	<!-- endinjector -->
+	<script>
+		(function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+		function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+		e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+		e.src='//www.google-analytics.com/analytics.js';
+		r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+		ga('create','XX-XXXXXX', 'auto');ga('send','pageview');
+	</script>
+	
+	<!--Livereload script, on production remove this line-->
+	<script src="//localhost:35729/livereload.js"></script>
+	
+	</body>
+</html>
