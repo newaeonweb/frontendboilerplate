@@ -1,6 +1,6 @@
 {
   "name": "frontendboilerplate",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Frontend Boilerplate to start a web project from the scratch",
   "directories": {
     "test": "test"
