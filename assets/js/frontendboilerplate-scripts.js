@@ -1,5 +1,6 @@
 /*!
-* frontendboilerplate - v0.0.5 - MIT LICENSE 01 12 2014. 
+* frontendboilerplate - v0.1.0 - MIT LICENSE 08 12 2014. 
+* @author Fernando Monteiro
 */
 /**
  * Sample content to test the concat and minify grunt plugins.

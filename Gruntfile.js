@@ -18,6 +18,7 @@ module.exports = function (grunt) {
 		pkg: grunt.file.readJSON('package.json'),
 		banner: '/*!\n' +
 			'* <%= pkg.name %> - v<%= pkg.version %> - MIT LICENSE <%= grunt.template.today("dd") %> <%= grunt.template.today("mm") %> <%= grunt.template.today("yyyy") %>. \n' +
+			'* @author <%= pkg.author %>\n' +	
 			'*/\n',
 		// Project settings
 		// Watches files for changes and runs tasks based on the changed files
