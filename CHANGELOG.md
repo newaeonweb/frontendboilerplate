@@ -1,3 +1,13 @@
+# 0.1.1 (2014-12-08)
+
+* Added project variables to gruntfile.
+* Added clean task
+
+### Features
+
+- Grunt.js Plugins
+	- grunt-clean
+
 # 0.1.0 (2014-12-01)
 
 * Added injectors script on index file for Bower dependencies.
