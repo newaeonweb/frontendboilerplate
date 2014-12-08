@@ -2,25 +2,41 @@
 module.exports = function (grunt) {
 	
 	'use strict';
+	
+	// Setup folders name, so if you wnat use a different folder structure, just update this variables
+	var config = {
+		dirName: 'assets',
+		srcName: 'src'
+	}
 
 	// Unified Watch Object asign variables for easy editing
 	var watchFiles = {
-		clientJS:   ['assets/js/*.js', 'assets/js/vendor/*.js'],
-		clientSrc:  ['src/scripts/*.js'],
-		clientCSS:  ['assets/css/**/*.css'],
-		clientPreprocessor: ['src/preprocessor/*.less', 'src/preprocessor/*.scss'],
-		clientHTML: ['assets/*.html'],
-		mochaTests: ['assets/test/unit/*.js'],
-		concatBase: ['src/scripts/*js', 'src/vendor/*js' ]
+		clientJS:   [config.dirName + '/js/*.js', config.dirName + '/js/vendor/*.js'],
+		clientSrc:  [config.srcName + '/scripts/*.js'],
+		clientCSS:  [config.dirName + '/css/**/*.css'],
+		clientPreprocessor: [config.srcName + '/preprocessor/*.less', config.srcName + '/preprocessor/*.scss'],
+		clientHTML: ['/*.html'],
+		mochaTests: [config.dirName + '/test/unit/*.js'],
+		concatBase: [config.srcName + '/scripts/*js', 'src/vendor/*js' ]
 	};
 	// Define the configuration for all the tasks
 	grunt.initConfig({
 		pkg: grunt.file.readJSON('package.json'),
 		banner: '/*!\n' +
-			'* <%= pkg.name %> - v<%= pkg.version %> - MIT LICENSE <%= grunt.template.today("dd") %> <%= grunt.template.today("mm") %> <%= grunt.template.today("yyyy") %>. \n' +
+			'* <%= pkg.name %> - v<%= pkg.version %> - MIT LICENSE <%= grunt.template.today("yyyy-mm-dd") %>. \n' +
 			'* @author <%= pkg.author %>\n' +	
 			'*/\n',
 		// Project settings
+		
+		clean: {
+			build: {
+    			src: [ config.dirName + '/css/*.css', config.dirName + '/js/*.js']
+  			},
+			// use this task to run before start coding
+			//reset: {
+			//	src: [config.srcName + 'preprocessor', config.srcName + 'scripts', 'lib']
+			//}
+		},
 		// Watches files for changes and runs tasks based on the changed files
 		watch: {
 			clientJS: {
@@ -88,7 +104,7 @@ module.exports = function (grunt) {
 			},
 			base: {
 				src: ['<%= concat.base.dest %>'],
-				dest: 'assets/js/<%= pkg.name %>-scripts.min.js'
+				dest: config.dirName + '/js/<%= pkg.name %>-scripts.min.js'
 			}
 		},
 		recess: {
@@ -100,8 +116,8 @@ module.exports = function (grunt) {
 				options: {
 					compress: false
 				},
-				src: ['src/preprocessor/*.less'],
-				dest: 'assets/css/<%= pkg.name %>-style.css'
+				src: [config.srcName + '/preprocessor/*.less'],
+				dest: config.dirName + '/css/<%= pkg.name %>-style.css'
 			}
 		},
 		sass: {

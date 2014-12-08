@@ -1,3 +1,15 @@
-body {
-  font: 100% Helvetica, sans-serif;
-  color: #333; }
+/*!
+* frontendboilerplate - v0.1.0 - MIT LICENSE 2014-12-08. 
+* @author Fernando Monteiro
+*/
+/* Sample using Less with CSS comments*/
+
+.box {
+  color: #fe33ac;
+  border-color: #fdcdea;
+}
+
+.box div {
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}

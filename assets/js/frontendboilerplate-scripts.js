@@ -1,5 +1,5 @@
 /*!
-* frontendboilerplate - v0.1.0 - MIT LICENSE 08 12 2014. 
+* frontendboilerplate - v0.1.0 - MIT LICENSE 2014-12-08. 
 * @author Fernando Monteiro
 */
 /**
