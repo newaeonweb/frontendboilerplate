@@ -381,3 +381,26 @@ code {
 	50% { opacity: 0.8; }
 	100% { opacity: 0; }
 }
+
+/* video style */
+
+video { 
+  max-width: 580px;
+  min-height: 100%;
+  width: 100%;
+  height: auto;
+  z-index: -100;
+  background: url('video/frontendboilerplate.jpg') no-repeat;
+  background-size: cover;
+  transition: 1s opacity;
+}
+.stopfade { 
+   opacity: .5;
+}
+
+@media screen and (min-width: 768px)
+.modal-dialog {
+	width: 680px;
+	margin: 30px auto;
+}
+
