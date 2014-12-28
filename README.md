@@ -33,6 +33,8 @@ All code here are based on lessons learned and good practices, however many of t
 To get you started you can simply clone or download the repository and install the dependencies, very simple!
 [Quick start](#grunt-commands-available).
 
+Also you can using the [Yeoman Generator](https://github.com/newaeonweb/generator-frontendboilerplate) to start even fast.
+
 ## Prerequisites
 
 You need [Git](http://git-scm.com/) to clone the repository.
