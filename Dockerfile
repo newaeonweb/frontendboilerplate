@@ -1,4 +1,4 @@
-FROM dockerfile/nodejs
+FROM node:0.10.28
 
 MAINTAINER Fernando Monteiro, fernando@newaeonweb.com.br
 
@@ -8,7 +8,7 @@ WORKDIR /home/frontendboilerplate
 RUN npm install -g grunt-cli
 RUN npm install -g bower
 
-# Install Mean.JS packages
+# Install packages
 ADD package.json /home/frontendboilerplate/package.json
 RUN npm install
 
