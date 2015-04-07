@@ -1,20 +1,20 @@
-FROM node:0.10.28
+FROM node:0.10-onbuild
 
 MAINTAINER Fernando Monteiro, fernando@newaeonweb.com.br
 
 WORKDIR /home/frontendboilerplate
 
 # Install Prerequisites
-RUN npm install -g grunt-cli
-RUN npm install -g bower
+docker run npm install -g grunt-cli
+docker run install -g bower
 
 # Install packages
 ADD package.json /home/frontendboilerplate/package.json
-RUN npm install
+docker run npm install
 
 # Manually trigger bower.
 ADD bower.json /home/frontendboilerplate/bower.json
-RUN bower install --config.interactive=false --allow-root
+docker run bower install --config.interactive=false --allow-root
 
 # Make everything available for start
 ADD . /home/frontendboilerplate
