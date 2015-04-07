@@ -13,7 +13,6 @@ ADD package.json /home/frontendboilerplate/package.json
 RUN npm install
 
 # Manually trigger bower.
-ADD .bowerrc /home/frontendboilerplate/.bowerrc
 ADD bower.json /home/frontendboilerplate/bower.json
 RUN bower install --config.interactive=false --allow-root
 
