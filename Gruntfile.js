@@ -55,7 +55,7 @@ module.exports = function (grunt) {
 			},
 			clientPreprocessor: {
 				files: watchFiles.clientPreprocessor,
-				tasks: ['less', 'sass'],
+				tasks: ['less', 'sassCompile'],
 				options: {
 					livereload: true
 				}
@@ -212,7 +212,7 @@ module.exports = function (grunt) {
 	
 	// Css task(s).
 	grunt.registerTask('less', ['recess']);
-	grunt.registerTask('sass', ['sass']);
+	grunt.registerTask('sassCompile', ['sass']);
 
 	// Lint task(s).
 	grunt.registerTask('lint', ['jshint', 'csslint']);
