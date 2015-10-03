@@ -15,7 +15,7 @@ module.exports = function (grunt) {
 		clientSrc:  [config.srcName + '/scripts/*.js'],
 		clientCSS:  [config.dirName + '/css/**/*.css'],
 		clientPreprocessor: [config.srcName + '/preprocessor/*.less', config.srcName + '/preprocessor/*.scss'],
-		clientHTML: ['/*.html'],
+		clientHTML: ['*.html'],
 		mochaTests: [config.dirName + '/test/unit/*.js'],
 		concatBase: [config.srcName + '/scripts/*js', 'src/vendor/*js' ]
 	};
